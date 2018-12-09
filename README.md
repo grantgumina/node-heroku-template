@@ -1,8 +1,7 @@
-# node-js-getting-started
+## How to
+Basic template I use for nodejs apps that'll be deployed on Heroku Works well. Make sure you setup a mongodb instance and add the connection string in a db.js file. You'll also want to create a config.js file too. Examples for both have been provided.
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
-
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+This template gets you an app with basic user authentication up and running in no time.
 
 ## Running Locally
 
