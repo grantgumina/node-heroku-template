@@ -1,5 +1,7 @@
 # Project specific stuff
 db.js
+config.js
+*.paw
 
 # OS X
 .DS_Store*

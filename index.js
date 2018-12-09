@@ -2,12 +2,15 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
-// var UserController = require('./user/UserController');
+var db = require('./db');
+var UserController = require('./controllers/UserController');
+var AuthController = require('./controllers/AuthController');
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
-  // .use('/users', UserController);
+  // .use('/users', UserController)
+  .use('/auth', AuthController)
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
+  .get('/', (req, res) => res.send("hello world"))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
